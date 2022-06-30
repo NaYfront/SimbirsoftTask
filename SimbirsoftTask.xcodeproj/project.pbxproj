@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */; };
+		39CA3BD2286E1B7800FB9AC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */; };
+		39CA3BD9286E1B7900FB9AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */; };
+		39CA3BDC286E1B7900FB9AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BDA286E1B7900FB9AC0 /* LaunchScreen.storyboard */; };
+		39CA3BEA286E1CE500FB9AC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */; };
+		39CA3BEB286E1CE500FB9AC0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */; };
+		B8A6DE09163085CF8BAA977A /* Pods_SimbirsoftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12AD2E23CE8C34C67A6E9218 /* Pods-SimbirsoftTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimbirsoftTask.debug.xcconfig"; path = "Target Support Files/Pods-SimbirsoftTask/Pods-SimbirsoftTask.debug.xcconfig"; sourceTree = "<group>"; };
+		13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimbirsoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimbirsoftTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39CA3BDB286E1B7900FB9AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39CA3BDD286E1B7900FB9AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FC378984AD76DF121CCD8B48 /* Pods-SimbirsoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimbirsoftTask.release.xcconfig"; path = "Target Support Files/Pods-SimbirsoftTask/Pods-SimbirsoftTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39CA3BC9286E1B7800FB9AC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A6DE09163085CF8BAA977A /* Pods_SimbirsoftTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39CA3BC3286E1B7800FB9AC0 = {
+			isa = PBXGroup;
+			children = (
+				39CA3BCE286E1B7800FB9AC0 /* SimbirsoftTask */,
+				39CA3BCD286E1B7800FB9AC0 /* Products */,
+				59521376DB9791753620F531 /* Pods */,
+				C129E67CF18E003BD928AE64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39CA3BCD286E1B7800FB9AC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39CA3BCE286E1B7800FB9AC0 /* SimbirsoftTask */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BE4286E1CAA00FB9AC0 /* MainModule */,
+				39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */,
+				39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */,
+				39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */,
+				39CA3BDA286E1B7900FB9AC0 /* LaunchScreen.storyboard */,
+				39CA3BDD286E1B7900FB9AC0 /* Info.plist */,
+			);
+			path = SimbirsoftTask;
+			sourceTree = "<group>";
+		};
+		39CA3BE4286E1CAA00FB9AC0 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BE7286E1CC700FB9AC0 /* Model */,
+				39CA3BE6286E1CC300FB9AC0 /* View */,
+				39CA3BE5286E1CBE00FB9AC0 /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		39CA3BE5286E1CBE00FB9AC0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39CA3BE6286E1CC300FB9AC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */,
+				39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39CA3BE7286E1CC700FB9AC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59521376DB9791753620F531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12AD2E23CE8C34C67A6E9218 /* Pods-SimbirsoftTask.debug.xcconfig */,
+				FC378984AD76DF121CCD8B48 /* Pods-SimbirsoftTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C129E67CF18E003BD928AE64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39CA3BCB286E1B7800FB9AC0 /* SimbirsoftTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39CA3BE0286E1B7900FB9AC0 /* Build configuration list for PBXNativeTarget "SimbirsoftTask" */;
+			buildPhases = (
+				39CA3BE3286E1C5300FB9AC0 /* ShellScript */,
+				E95CADB1B3803A8766009BBB /* [CP] Check Pods Manifest.lock */,
+				39CA3BC8286E1B7800FB9AC0 /* Sources */,
+				39CA3BC9286E1B7800FB9AC0 /* Frameworks */,
+				39CA3BCA286E1B7800FB9AC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimbirsoftTask;
+			productName = SimbirsoftTask;
+			productReference = 39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39CA3BC4286E1B7800FB9AC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					39CA3BCB286E1B7800FB9AC0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 39CA3BC7286E1B7800FB9AC0 /* Build configuration list for PBXProject "SimbirsoftTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39CA3BC3286E1B7800FB9AC0;
+			productRefGroup = 39CA3BCD286E1B7800FB9AC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39CA3BCB286E1B7800FB9AC0 /* SimbirsoftTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39CA3BCA286E1B7800FB9AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CA3BDC286E1B7900FB9AC0 /* LaunchScreen.storyboard in Resources */,
+				39CA3BEB286E1CE500FB9AC0 /* MainViewController.xib in Resources */,
+				39CA3BD9286E1B7900FB9AC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39CA3BE3286E1C5300FB9AC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		E95CADB1B3803A8766009BBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimbirsoftTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39CA3BC8286E1B7800FB9AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CA3BEA286E1CE500FB9AC0 /* MainViewController.swift in Sources */,
+				39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */,
+				39CA3BD2286E1B7800FB9AC0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39CA3BDA286E1B7900FB9AC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39CA3BDB286E1B7900FB9AC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39CA3BDE286E1B7900FB9AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39CA3BDF286E1B7900FB9AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39CA3BE1286E1B7900FB9AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AD2E23CE8C34C67A6E9218 /* Pods-SimbirsoftTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimbirsoftTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SimbirsoftTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39CA3BE2286E1B7900FB9AC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC378984AD76DF121CCD8B48 /* Pods-SimbirsoftTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimbirsoftTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SimbirsoftTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39CA3BC7286E1B7800FB9AC0 /* Build configuration list for PBXProject "SimbirsoftTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39CA3BDE286E1B7900FB9AC0 /* Debug */,
+				39CA3BDF286E1B7900FB9AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39CA3BE0286E1B7900FB9AC0 /* Build configuration list for PBXNativeTarget "SimbirsoftTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39CA3BE1286E1B7900FB9AC0 /* Debug */,
+				39CA3BE2286E1B7900FB9AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39CA3BC4286E1B7800FB9AC0 /* Project object */;
+}
