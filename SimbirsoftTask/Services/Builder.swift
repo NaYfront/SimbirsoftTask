@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import UIKit
+
+protocol BuilderProtocol {
+    static func createMainModule() -> UIViewController
+}
+
+class Builder {
+    static func createMainModule() -> UIViewController {
+        let view = MainViewController()
+        let presenter = MainPresenter(view: view)
+        
+        view.presenter = presenter
+        
+        return view
+    }
+}

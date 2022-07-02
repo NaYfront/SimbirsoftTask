@@ -13,6 +13,8 @@ protocol MainViewProtocol: AnyObject {
 }
 
 protocol MainViewPresenterProtocol: AnyObject {
+    var date: Date? { get set }
+    var tableContent: [Task]? { get set }
     init(view: MainViewProtocol)
 }
 
@@ -20,6 +22,7 @@ class MainPresenter: MainViewPresenterProtocol {
     // MARK: - Properties
     weak var view: MainViewProtocol?
     var date: Date?
+    var tableContent: [Task]?
     
     // MARK: - Init
     required init(view: MainViewProtocol) {

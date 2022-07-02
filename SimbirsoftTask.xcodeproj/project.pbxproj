@@ -103,8 +103,7 @@
 		39CA3BE6286E1CC300FB9AC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */,
-				39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */,
+				39CA3BF6287075CD00FB9AC0 /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +123,15 @@
 				39CA3BF2286E354000FB9AC0 /* Builder.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		39CA3BF6287075CD00FB9AC0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */,
+				39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		59521376DB9791753620F531 /* Pods */ = {

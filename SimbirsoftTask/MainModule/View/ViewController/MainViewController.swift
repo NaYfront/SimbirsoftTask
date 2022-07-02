@@ -12,9 +12,14 @@ class MainViewController: UIViewController {
     @IBOutlet weak var calendarDatePicker: UIDatePicker!
     
     var tableView: UITableView!
+    var presenter: MainViewPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+}
+
+extension MainViewController: MainViewProtocol {
+    
 }
