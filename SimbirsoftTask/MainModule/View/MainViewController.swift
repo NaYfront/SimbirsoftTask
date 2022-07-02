@@ -9,8 +9,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var calendarDatePicker: UIDatePicker!
+    
+    var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 }

@@ -13,6 +13,10 @@
 		39CA3BDC286E1B7900FB9AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BDA286E1B7900FB9AC0 /* LaunchScreen.storyboard */; };
 		39CA3BEA286E1CE500FB9AC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */; };
 		39CA3BEB286E1CE500FB9AC0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */; };
+		39CA3BED286E243900FB9AC0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BEC286E243900FB9AC0 /* MainPresenter.swift */; };
+		39CA3BF1286E352D00FB9AC0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BF0286E352D00FB9AC0 /* Router.swift */; };
+		39CA3BF3286E354000FB9AC0 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BF2286E354000FB9AC0 /* Builder.swift */; };
+		39CA3BF5286F0BD900FB9AC0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BF4286F0BD900FB9AC0 /* Task.swift */; };
 		B8A6DE09163085CF8BAA977A /* Pods_SimbirsoftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		39CA3BDD286E1B7900FB9AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39CA3BE8286E1CE500FB9AC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		39CA3BE9286E1CE500FB9AC0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		39CA3BEC286E243900FB9AC0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		39CA3BF0286E352D00FB9AC0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		39CA3BF2286E354000FB9AC0 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		39CA3BF4286F0BD900FB9AC0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FC378984AD76DF121CCD8B48 /* Pods-SimbirsoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimbirsoftTask.release.xcconfig"; path = "Target Support Files/Pods-SimbirsoftTask/Pods-SimbirsoftTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,7 @@
 		39CA3BCE286E1B7800FB9AC0 /* SimbirsoftTask */ = {
 			isa = PBXGroup;
 			children = (
+				39CA3BEE286E351500FB9AC0 /* Services */,
 				39CA3BE4286E1CAA00FB9AC0 /* MainModule */,
 				39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */,
 				39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */,
@@ -86,6 +95,7 @@
 		39CA3BE5286E1CBE00FB9AC0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				39CA3BEC286E243900FB9AC0 /* MainPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -102,8 +112,18 @@
 		39CA3BE7286E1CC700FB9AC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39CA3BF4286F0BD900FB9AC0 /* Task.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		39CA3BEE286E351500FB9AC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3BF0286E352D00FB9AC0 /* Router.swift */,
+				39CA3BF2286E354000FB9AC0 /* Builder.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		59521376DB9791753620F531 /* Pods */ = {
@@ -240,7 +260,11 @@
 			files = (
 				39CA3BEA286E1CE500FB9AC0 /* MainViewController.swift in Sources */,
 				39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */,
+				39CA3BF1286E352D00FB9AC0 /* Router.swift in Sources */,
 				39CA3BD2286E1B7800FB9AC0 /* SceneDelegate.swift in Sources */,
+				39CA3BED286E243900FB9AC0 /* MainPresenter.swift in Sources */,
+				39CA3BF5286F0BD900FB9AC0 /* Task.swift in Sources */,
+				39CA3BF3286E354000FB9AC0 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
