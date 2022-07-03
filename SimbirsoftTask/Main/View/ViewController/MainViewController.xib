@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SimbirsoftTask" customModuleProvider="target">
             <connections>
                 <outlet property="calendarDatePicker" destination="pLv-fZ-MPA" id="g0L-Yg-CAR"/>
+                <outlet property="mainTableView" destination="SOg-1K-gwp" id="iUP-Dn-KF6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
