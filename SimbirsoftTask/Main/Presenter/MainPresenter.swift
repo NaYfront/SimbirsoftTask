@@ -15,18 +15,25 @@ protocol MainViewProtocol: AnyObject {
 protocol MainViewPresenterProtocol: AnyObject {
     var date: Date? { get set }
     var tableContent: [Task]? { get set }
-    init(view: MainViewProtocol)
+    init(view: MainViewProtocol, router: RouterProtocol)
+    func tapOnTask(task: Task)
 }
 
 class MainPresenter: MainViewPresenterProtocol {
     // MARK: - Properties
     weak var view: MainViewProtocol?
+    var router: RouterProtocol?
     var date: Date?
     var tableContent: [Task]?
     
     // MARK: - Init
-    required init(view: MainViewProtocol) {
+    required init(view: MainViewProtocol, router: RouterProtocol) {
         self.view = view
+        self.router = router
         self.date = Date()
+    }
+    
+    func tapOnTask(task: Task) {
+        router?.showDetail(task: task)
     }
 }

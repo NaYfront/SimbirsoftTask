@@ -14,6 +14,8 @@ class CreateTaskViewController: UIViewController {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     
+    var presenter: CreateTaskViewPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,4 +24,8 @@ class CreateTaskViewController: UIViewController {
     
     @IBAction func createTaskAction(_ sender: Any) {
     }
+}
+
+extension CreateTaskViewController: CreateTaskViewProtocol {
+    
 }

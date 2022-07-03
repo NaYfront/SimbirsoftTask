@@ -9,22 +9,19 @@ import Foundation
 import UIKit
 
 protocol CreateTaskViewProtocol: AnyObject {
-    func configure()
+    
 }
 
 protocol CreateTaskViewPresenterProtocol: AnyObject {
-    var task: Task { get set }
-    init(view: CreateTaskViewProtocol, task: Task)
+    init(view: CreateTaskViewProtocol)
 }
 
 class CreateTaskPresenter: CreateTaskViewPresenterProtocol {
     // MARK: - Properties
     weak var view: CreateTaskViewProtocol?
-    var task: Task
     
     // MARK: - Init
-    required init(view: CreateTaskViewProtocol, task: Task) {
+    required init(view: CreateTaskViewProtocol) {
         self.view = view
-        self.task = task
     }
 }

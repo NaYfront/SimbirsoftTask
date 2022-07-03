@@ -31,6 +31,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = Task(name: "name", description: "description", timeStart: Date(), timeFinish: Date())
+        presenter.tapOnTask(task: task)
+    }
 }
 
 extension MainViewController: MainViewProtocol {
