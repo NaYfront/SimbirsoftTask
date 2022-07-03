@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390F517E2871BA7500D4D795 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F517C2871BA7500D4D795 /* CreateTaskViewController.swift */; };
+		390F517F2871BA7500D4D795 /* CreateTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390F517D2871BA7500D4D795 /* CreateTaskViewController.xib */; };
+		390F51812871BA8800D4D795 /* CreateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F51802871BA8800D4D795 /* CreateTaskPresenter.swift */; };
 		39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */; };
 		39CA3BD2286E1B7800FB9AC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */; };
 		39CA3BD9286E1B7900FB9AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		12AD2E23CE8C34C67A6E9218 /* Pods-SimbirsoftTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimbirsoftTask.debug.xcconfig"; path = "Target Support Files/Pods-SimbirsoftTask/Pods-SimbirsoftTask.debug.xcconfig"; sourceTree = "<group>"; };
 		13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimbirsoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390F517C2871BA7500D4D795 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		390F517D2871BA7500D4D795 /* CreateTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateTaskViewController.xib; sourceTree = "<group>"; };
+		390F51802871BA8800D4D795 /* CreateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskPresenter.swift; sourceTree = "<group>"; };
 		39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimbirsoftTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 				39CA3BEE286E351500FB9AC0 /* Services */,
 				39CA3BE4286E1CAA00FB9AC0 /* Main */,
 				39CA3C002871A04400FB9AC0 /* Detail */,
+				39CA3C092871B9D300FB9AC0 /* CreateTask */,
 				39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */,
 				39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */,
 				39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */,
@@ -161,8 +168,8 @@
 		39CA3C002871A04400FB9AC0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				39CA3C022871A06200FB9AC0 /* Presenter */,
 				39CA3C012871A05B00FB9AC0 /* View */,
+				39CA3C022871A06200FB9AC0 /* Presenter */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -180,6 +187,32 @@
 			isa = PBXGroup;
 			children = (
 				39CA3C032871A07700FB9AC0 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39CA3C092871B9D300FB9AC0 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				39CA3C0B2871B9EA00FB9AC0 /* View */,
+				39CA3C0C2871B9F000FB9AC0 /* Presenter */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		39CA3C0B2871B9EA00FB9AC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				390F517C2871BA7500D4D795 /* CreateTaskViewController.swift */,
+				390F517D2871BA7500D4D795 /* CreateTaskViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39CA3C0C2871B9F000FB9AC0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				390F51802871BA8800D4D795 /* CreateTaskPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -264,6 +297,7 @@
 				39CA3BDC286E1B7900FB9AC0 /* LaunchScreen.storyboard in Resources */,
 				39CA3C082871A14100FB9AC0 /* DetailViewController.xib in Resources */,
 				39CA3BFF287086F700FB9AC0 /* Main.storyboard in Resources */,
+				390F517F2871BA7500D4D795 /* CreateTaskViewController.xib in Resources */,
 				39CA3BEB286E1CE500FB9AC0 /* MainViewController.xib in Resources */,
 				39CA3BFD28707E8500FB9AC0 /* MainTableViewCell.xib in Resources */,
 				39CA3BD9286E1B7900FB9AC0 /* Assets.xcassets in Resources */,
@@ -321,6 +355,7 @@
 			files = (
 				39CA3BEA286E1CE500FB9AC0 /* MainViewController.swift in Sources */,
 				39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */,
+				390F517E2871BA7500D4D795 /* CreateTaskViewController.swift in Sources */,
 				39CA3C042871A07700FB9AC0 /* DetailPresenter.swift in Sources */,
 				39CA3BFC28707E8500FB9AC0 /* MainTableViewCell.swift in Sources */,
 				39CA3BF1286E352D00FB9AC0 /* Router.swift in Sources */,
@@ -329,6 +364,7 @@
 				39CA3C072871A14100FB9AC0 /* DetailViewController.swift in Sources */,
 				39CA3BF5286F0BD900FB9AC0 /* Task.swift in Sources */,
 				39CA3BF3286E354000FB9AC0 /* Builder.swift in Sources */,
+				390F51812871BA8800D4D795 /* CreateTaskPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
