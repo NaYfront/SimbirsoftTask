@@ -12,4 +12,11 @@ struct Task {
     let description: String?
     let timeStart: Date
     let timeFinish: Date
+    
+    func getTaskRange() -> ClosedRange<Int> {
+        let startHour = Calendar.current.component(.hour, from: self.timeStart)
+        let endHour = Calendar.current.component(.hour, from: self.timeFinish)
+        
+        return startHour...endHour
+    }
 }

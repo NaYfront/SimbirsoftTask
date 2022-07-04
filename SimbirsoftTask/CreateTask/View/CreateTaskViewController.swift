@@ -21,7 +21,6 @@ class CreateTaskViewController: UIViewController {
 
     }
     
-    
     @IBAction func createTaskAction(_ sender: Any) {
     }
 }
