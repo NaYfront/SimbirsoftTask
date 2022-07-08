@@ -22,6 +22,9 @@
             <subviews>
                 <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="pLv-fZ-MPA">
                     <rect key="frame" x="20" y="44" width="374" height="216"/>
+                    <connections>
+                        <action selector="calendarChanged:" destination="-1" eventType="valueChanged" id="2go-a3-hf6"/>
+                    </connections>
                 </datePicker>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SOg-1K-gwp">
                     <rect key="frame" x="20" y="278" width="374" height="584"/>

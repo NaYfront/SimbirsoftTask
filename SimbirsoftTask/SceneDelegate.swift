@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationController = UINavigationController()
         let builder = Builder()
-        let router = Router(navigationController: navigationController, builder: builder)
+        let dataManager = DataManager()
+        let router = Router(navigationController: navigationController, builder: builder, dataManager: dataManager)
         
         router.showMain()
         

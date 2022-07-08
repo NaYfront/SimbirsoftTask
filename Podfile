@@ -7,5 +7,6 @@ target 'SimbirsoftTask' do
 
   # Pods for SimbirsoftTask
 pod 'SwiftLint'
+pod 'RealmSwift'
 
 end

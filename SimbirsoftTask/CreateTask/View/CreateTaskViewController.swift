@@ -11,8 +11,9 @@ class CreateTaskViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var startDatePicker: UIDatePicker!
-    @IBOutlet weak var endDatePicker: UIDatePicker!
+    @IBOutlet weak var dayDatePicker: UIDatePicker!
+    @IBOutlet weak var startTimeDatePicker: UIDatePicker!
+    @IBOutlet weak var endTimeDatePicker: UIDatePicker!
     
     var presenter: CreateTaskViewPresenterProtocol!
     
@@ -22,9 +23,16 @@ class CreateTaskViewController: UIViewController {
     }
     
     @IBAction func createTaskAction(_ sender: Any) {
+        presenter.validate(name: nameTextField.text, timeStart: startTimeDatePicker.date, timeEnd: endTimeDatePicker.date)
     }
 }
 
 extension CreateTaskViewController: CreateTaskViewProtocol {
-    
+    func showAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

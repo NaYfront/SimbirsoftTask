@@ -1,6 +1,0 @@
-framework module Pods_SimbirsoftTask {
-  umbrella header "Pods-SimbirsoftTask-umbrella.h"
-
-  export *
-  module * { export * }
-}

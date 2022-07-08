@@ -10,10 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTaskViewController" customModule="SimbirsoftTask" customModuleProvider="target">
             <connections>
+                <outlet property="dayDatePicker" destination="4rQ-So-ECe" id="ZRv-z6-Lqa"/>
                 <outlet property="descriptionTextField" destination="Xb2-gp-FO4" id="Hir-uN-b38"/>
-                <outlet property="endDatePicker" destination="HAf-Ox-rHu" id="2ak-Ag-gU3"/>
+                <outlet property="endTimeDatePicker" destination="HAf-Ox-rHu" id="fGB-hs-nh3"/>
                 <outlet property="nameTextField" destination="PUx-xy-C26" id="4Of-Pm-8od"/>
-                <outlet property="startDatePicker" destination="7zF-RD-CMO" id="nqi-6P-ViS"/>
+                <outlet property="startTimeDatePicker" destination="7zF-RD-CMO" id="ZaZ-9d-NUs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eFU-TR-lnF">
-                    <rect key="frame" x="20" y="328.5" width="374" height="239"/>
+                    <rect key="frame" x="20" y="171.5" width="374" height="553"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-xy-C26">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -35,46 +36,59 @@
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iy-xQ-wVx">
-                            <rect key="frame" x="0.0" y="88" width="374" height="50"/>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="4rQ-So-ECe">
+                            <rect key="frame" x="0.0" y="88" width="374" height="352"/>
+                            <locale key="locale" localeIdentifier="ru"/>
+                        </datePicker>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5iy-xQ-wVx">
+                            <rect key="frame" x="0.0" y="450" width="374" height="56"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-LF-SQt">
-                                    <rect key="frame" x="0.0" y="0.0" width="219" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="43" height="56"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="7zF-RD-CMO">
-                                    <rect key="frame" x="219" y="0.0" width="155" height="50"/>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="7zF-RD-CMO">
+                                    <rect key="frame" x="75" y="0.0" width="80" height="56"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="155" id="Jss-c6-0fq"/>
-                                        <constraint firstAttribute="height" constant="50" id="Mzd-Sv-dpY"/>
+                                        <constraint firstAttribute="width" constant="80" id="dJZ-g6-lTK"/>
                                     </constraints>
+                                    <locale key="locale" localeIdentifier="ru"/>
                                 </datePicker>
-                            </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-mS-0ti">
-                            <rect key="frame" x="0.0" y="148" width="374" height="50"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-Cx-vc8">
-                                    <rect key="frame" x="0.0" y="0.0" width="219" height="50"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-0W-cOs">
+                                    <rect key="frame" x="187" y="0.0" width="9" height="56"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-Ox-rHu">
-                                    <rect key="frame" x="219" y="0.0" width="155" height="50"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-Cx-vc8">
+                                    <rect key="frame" x="228" y="0.0" width="34" height="56"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-Ox-rHu">
+                                    <rect key="frame" x="294" y="0.0" width="80" height="56"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="155" id="XS6-RN-UlR"/>
-                                        <constraint firstAttribute="height" constant="50" id="jvt-5r-Zox"/>
+                                        <constraint firstAttribute="width" constant="80" id="W3n-Dr-UVf"/>
                                     </constraints>
+                                    <locale key="locale" localeIdentifier="ru"/>
                                 </datePicker>
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94n-kV-20I">
-                            <rect key="frame" x="0.0" y="208" width="374" height="31"/>
+                            <rect key="frame" x="0.0" y="516" width="374" height="37"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Create Task"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Create Task">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="createTaskAction:" destination="-1" eventType="touchUpInside" id="dhR-r4-rDS"/>
                             </connections>
