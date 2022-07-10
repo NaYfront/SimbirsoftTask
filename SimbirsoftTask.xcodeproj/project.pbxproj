@@ -14,6 +14,7 @@
 		390F51852872F4A900D4D795 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F51842872F4A900D4D795 /* Section.swift */; };
 		390F51872873418A00D4D795 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F51862873418A00D4D795 /* DataManager.swift */; };
 		390F5189287344F700D4D795 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F5188287344F700D4D795 /* ExtensionDate.swift */; };
+		393A80C2287B3FD1000637B5 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393A80C1287B3FD1000637B5 /* RouterTests.swift */; };
 		39CA3BD0286E1B7800FB9AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */; };
 		39CA3BD2286E1B7800FB9AC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */; };
 		39CA3BD9286E1B7900FB9AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CA3BD8286E1B7900FB9AC0 /* Assets.xcassets */; };
@@ -33,6 +34,16 @@
 		B8A6DE09163085CF8BAA977A /* Pods_SimbirsoftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		393A80BC287B3F26000637B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39CA3BC4286E1B7800FB9AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39CA3BCB286E1B7800FB9AC0;
+			remoteInfo = SimbirsoftTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		12AD2E23CE8C34C67A6E9218 /* Pods-SimbirsoftTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimbirsoftTask.debug.xcconfig"; path = "Target Support Files/Pods-SimbirsoftTask/Pods-SimbirsoftTask.debug.xcconfig"; sourceTree = "<group>"; };
 		13B5149785EE938875F473DC /* Pods_SimbirsoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimbirsoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +54,8 @@
 		390F51842872F4A900D4D795 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		390F51862873418A00D4D795 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		390F5188287344F700D4D795 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		393A80B8287B3F26000637B5 /* SimbirsoftTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimbirsoftTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		393A80C1287B3FD1000637B5 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
 		39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimbirsoftTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CA3BCF286E1B7800FB9AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CA3BD1286E1B7800FB9AC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		393A80B5287B3F26000637B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39CA3BC9286E1B7800FB9AC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,10 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393A80B9287B3F26000637B5 /* SimbirsoftTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				393A80C1287B3FD1000637B5 /* RouterTests.swift */,
+			);
+			path = SimbirsoftTaskTests;
+			sourceTree = "<group>";
+		};
 		39CA3BC3286E1B7800FB9AC0 = {
 			isa = PBXGroup;
 			children = (
 				39CA3BCE286E1B7800FB9AC0 /* SimbirsoftTask */,
+				393A80B9287B3F26000637B5 /* SimbirsoftTaskTests */,
 				39CA3BCD286E1B7800FB9AC0 /* Products */,
 				59521376DB9791753620F531 /* Pods */,
 				C129E67CF18E003BD928AE64 /* Frameworks */,
@@ -90,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				39CA3BCC286E1B7800FB9AC0 /* SimbirsoftTask.app */,
+				393A80B8287B3F26000637B5 /* SimbirsoftTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +279,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		393A80B7287B3F26000637B5 /* SimbirsoftTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393A80C0287B3F26000637B5 /* Build configuration list for PBXNativeTarget "SimbirsoftTaskTests" */;
+			buildPhases = (
+				393A80B4287B3F26000637B5 /* Sources */,
+				393A80B5287B3F26000637B5 /* Frameworks */,
+				393A80B6287B3F26000637B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				393A80BD287B3F26000637B5 /* PBXTargetDependency */,
+			);
+			name = SimbirsoftTaskTests;
+			productName = SimbirsoftTaskTests;
+			productReference = 393A80B8287B3F26000637B5 /* SimbirsoftTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		39CA3BCB286E1B7800FB9AC0 /* SimbirsoftTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39CA3BE0286E1B7900FB9AC0 /* Build configuration list for PBXNativeTarget "SimbirsoftTask" */;
@@ -279,6 +327,11 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					393A80B7287B3F26000637B5 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+						TestTargetID = 39CA3BCB286E1B7800FB9AC0;
+					};
 					39CA3BCB286E1B7800FB9AC0 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -298,11 +351,19 @@
 			projectRoot = "";
 			targets = (
 				39CA3BCB286E1B7800FB9AC0 /* SimbirsoftTask */,
+				393A80B7287B3F26000637B5 /* SimbirsoftTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		393A80B6287B3F26000637B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39CA3BCA286E1B7800FB9AC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +440,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		393A80B4287B3F26000637B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393A80C2287B3FD1000637B5 /* RouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39CA3BC8286E1B7800FB9AC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +473,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		393A80BD287B3F26000637B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39CA3BCB286E1B7800FB9AC0 /* SimbirsoftTask */;
+			targetProxy = 393A80BC287B3F26000637B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		39CA3BDA286E1B7900FB9AC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -416,6 +493,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		393A80BE287B3F26000637B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SimbirsoftTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimbirsoftTask.app/SimbirsoftTask";
+			};
+			name = Debug;
+		};
+		393A80BF287B3F26000637B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SimbirsoftTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimbirsoftTask.app/SimbirsoftTask";
+			};
+			name = Release;
+		};
 		39CA3BDE286E1B7900FB9AC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,6 +717,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		393A80C0287B3F26000637B5 /* Build configuration list for PBXNativeTarget "SimbirsoftTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393A80BE287B3F26000637B5 /* Debug */,
+				393A80BF287B3F26000637B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		39CA3BC7286E1B7800FB9AC0 /* Build configuration list for PBXProject "SimbirsoftTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
