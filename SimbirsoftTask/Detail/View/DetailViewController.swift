@@ -19,14 +19,12 @@ class DetailViewController: UIViewController {
         
         configure()
     }
-    
-    func configure() {
-        nameLabel.text = self.presenter.task.name
-        descriptionLabel.text = self.presenter.task.description
-        // dateLabel.text
-    }
 }
 
 extension DetailViewController: DetailViewProtocol {
-    
+    func configure() {
+        nameLabel.text = self.presenter.task.name
+        descriptionLabel.text = self.presenter.task.specification
+        dateLabel.text = self.presenter.convertDate()
+    }
 }

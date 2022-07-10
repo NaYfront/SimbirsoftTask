@@ -14,7 +14,8 @@ protocol CreateTaskViewProtocol: AnyObject {
 
 protocol CreateTaskViewPresenterProtocol: AnyObject {
     init(view: CreateTaskViewProtocol, router: RouterProtocol, dataManager: DataManagerProtocol)
-    func validate(name: String?, timeStart: Date, timeEnd: Date)
+    func validate(name: String?, timeStart: Date, timeEnd: Date) -> Bool
+    func save(name: String?, specification: String?, day: Date, timeStart: Date, timeEnd: Date)
 }
 
 class CreateTaskPresenter: CreateTaskViewPresenterProtocol {
@@ -30,13 +31,28 @@ class CreateTaskPresenter: CreateTaskViewPresenterProtocol {
         self.dataManager = dataManager
     }
     
-    func validate(name: String?, timeStart: Date, timeEnd: Date) {
-        if name == nil {
+    func validate(name: String?, timeStart: Date, timeEnd: Date) -> Bool {
+        if name == "" {
             view?.showAlert(title: "No name", message: "Please fill in the name field")
-        } else if timeStart <= timeEnd {
+            return false
+        } else if timeStart >= timeEnd {
             view?.showAlert(title: "Wrong time selected", message: "Please make sure the start time is less than the end time")
+            return false
         } else {
+            return true
+        }
+    }
+    
+    func save(name: String?, specification: String?, day: Date, timeStart: Date, timeEnd: Date) {
+        if validate(name: name, timeStart: timeStart, timeEnd: timeEnd) {
+            let task = Task()
+            task.name = name
+            task.specification = specification
+            task.timeStart = Date.changeDate(day: day, time: timeStart)
+            task.timeEnd = Date.changeDate(day: day, time: timeEnd)
             
+            dataManager?.save(task: task)
+            router?.popToRoot()
         }
     }
 }

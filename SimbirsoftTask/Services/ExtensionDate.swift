@@ -8,28 +8,48 @@
 import Foundation
 
 extension Date {
-    static func startOfDay(at date: Date = Date()) -> Date {
-        return Calendar.current.startOfDay(for: date)
-    }
-    
-    static func endOfDay(at date: Date = Date()) -> Date {
-        var dateComponents = DateComponents()
-        dateComponents.hour = 23
-        dateComponents.minute = 59
-        dateComponents.second = 59
-        return Calendar.current.date(byAdding: dateComponents, to: startOfDay(at: date))!
-    }
-    
     func getDayComponents() -> DateComponents {
         return Calendar.current.dateComponents([.day, .month, .year], from: self)
     }
     
-    func getString() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "ru_RU")
-        dateFormatter.setLocalizedDateFormatFromTemplate("MMMdd, HH:mm")
+    static func correctFormat(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd-yyyy HH:mm"
+        
+        return formatter.string(from: date)
+    }
+    
+    static func changeDate(day: Date, time: Date) -> Date {
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "yyyy"
+        let year = formatter.string(from: day)
+        formatter.dateFormat = "MM"
+        let month = formatter.string(from: day)
+        formatter.dateFormat = "dd"
+        let day = formatter.string(from: day)
+        
+        formatter.dateFormat = "HH"
+        let hours = formatter.string(from: time)
+        formatter.dateFormat = "mm"
+        let minutes = formatter.string(from: time)
+        
+        var dateComponents = DateComponents()
+        
+        dateComponents.timeZone = TimeZone(abbreviation: "MSK")
 
-        return dateFormatter.string(from: self)
+        dateComponents.year = Int(year) ?? 0
+        dateComponents.month = Int(month) ?? 0
+        dateComponents.day = Int(day) ?? 0
+        
+        dateComponents.hour = Int(hours) ?? 0
+        dateComponents.minute = Int(minutes) ?? 0
+
+        let calendar = Calendar(identifier: .gregorian)
+        
+        guard let newDate = calendar.date(from: dateComponents) else { return Date() }
+        
+        return newDate
     }
 }
 

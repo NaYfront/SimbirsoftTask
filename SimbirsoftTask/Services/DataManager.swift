@@ -35,6 +35,6 @@ class DataManager: DataManagerProtocol {
     }
     
     private func filter(date: Date, object: Task) -> Bool {
-        return date.getDayComponents() >= object.timeStart.getDayComponents() && date.getDayComponents() <= object.timeFinish.getDayComponents()
+        return date.getDayComponents() >= object.timeStart.getDayComponents() && date.getDayComponents() <= object.timeEnd.getDayComponents()
     }
 }

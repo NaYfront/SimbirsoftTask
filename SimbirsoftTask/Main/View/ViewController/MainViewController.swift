@@ -9,7 +9,6 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var calendarDatePicker: UIDatePicker!
     @IBOutlet weak var mainTableView: UITableView!
     
     var presenter: MainViewPresenterProtocol!
@@ -20,6 +19,10 @@ class MainViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add Task", style: .plain, target: self, action: #selector(addTapped))
         
         mainTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        presenter.uniteTasks(date: presenter.date)
     }
     
     @objc func addTapped() {
@@ -65,5 +68,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MainViewController: MainViewProtocol {
-    
+    func reloadData() {
+        self.mainTableView.reloadData()
+    }
 }

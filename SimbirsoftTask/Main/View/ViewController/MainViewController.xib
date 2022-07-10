@@ -10,8 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SimbirsoftTask" customModuleProvider="target">
             <connections>
-                <outlet property="calendarDatePicker" destination="pLv-fZ-MPA" id="g0L-Yg-CAR"/>
-                <outlet property="mainTableView" destination="SOg-1K-gwp" id="iUP-Dn-KF6"/>
+                <outlet property="mainTableView" destination="SOg-1K-gwp" id="A5y-kv-bLa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,8 +29,8 @@
                     <rect key="frame" x="20" y="278" width="374" height="584"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="Ybw-tz-7wz"/>
-                        <outlet property="delegate" destination="-1" id="OUN-pb-zWV"/>
+                        <outlet property="dataSource" destination="-1" id="On9-A3-KQq"/>
+                        <outlet property="delegate" destination="-1" id="7me-tF-fW6"/>
                     </connections>
                 </tableView>
             </subviews>

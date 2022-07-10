@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol MainViewProtocol: AnyObject {
-
+    func reloadData()
 }
 
 protocol MainViewPresenterProtocol: AnyObject {
@@ -18,6 +18,7 @@ protocol MainViewPresenterProtocol: AnyObject {
     init(view: MainViewProtocol, router: RouterProtocol, dataManager: DataManagerProtocol)
     func tapOnTask(task: Task)
     func tapOnPlusButton()
+    func uniteTasks(date: Date?)
     func dateChanged(date: Date)
 }
 
@@ -25,7 +26,7 @@ class MainPresenter: MainViewPresenterProtocol {
     // MARK: - Properties
     weak var view: MainViewProtocol?
     var router: RouterProtocol?
-    var dataManager: DataManager?
+    var dataManager: DataManagerProtocol?
     var date: Date?
     var tasksTable: TasksTable?
     
@@ -33,6 +34,7 @@ class MainPresenter: MainViewPresenterProtocol {
     required init(view: MainViewProtocol, router: RouterProtocol, dataManager: DataManagerProtocol) {
         self.view = view
         self.router = router
+        self.dataManager = dataManager
         self.date = Date()
     }
     
@@ -49,6 +51,8 @@ class MainPresenter: MainViewPresenterProtocol {
         
         guard let tasks = dataManager?.uniteTasks(date: date) else { return }
         self.tasksTable = TasksTable(tasks: tasks)
+        
+        self.view?.reloadData()
     }
     
     func dateChanged(date: Date) {

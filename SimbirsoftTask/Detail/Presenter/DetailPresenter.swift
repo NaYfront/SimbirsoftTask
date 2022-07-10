@@ -15,6 +15,8 @@ protocol DetailViewProtocol: AnyObject {
 protocol DetailViewPresenterProtocol: AnyObject {
     var task: Task { get set }
     init(view: DetailViewProtocol, task: Task)
+    
+    func convertDate() -> String
 }
 
 class DetailPresenter: DetailViewPresenterProtocol {
@@ -26,5 +28,9 @@ class DetailPresenter: DetailViewPresenterProtocol {
     required init(view: DetailViewProtocol, task: Task) {
         self.view = view
         self.task = task
+    }
+    
+    func convertDate() -> String {
+        return "\(Date.correctFormat(date: task.timeStart)) - \(Date.correctFormat(date: task.timeEnd))"
     }
 }

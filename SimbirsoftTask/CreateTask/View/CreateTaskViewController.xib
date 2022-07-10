@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTaskViewController" customModule="SimbirsoftTask" customModuleProvider="target">
             <connections>
-                <outlet property="dayDatePicker" destination="4rQ-So-ECe" id="ZRv-z6-Lqa"/>
+                <outlet property="dayDatePicker" destination="4rQ-So-ECe" id="BXI-GB-IIE"/>
                 <outlet property="descriptionTextField" destination="Xb2-gp-FO4" id="Hir-uN-b38"/>
                 <outlet property="endTimeDatePicker" destination="HAf-Ox-rHu" id="fGB-hs-nh3"/>
                 <outlet property="nameTextField" destination="PUx-xy-C26" id="4Of-Pm-8od"/>

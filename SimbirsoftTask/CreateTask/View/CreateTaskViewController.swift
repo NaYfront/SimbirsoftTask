@@ -19,12 +19,12 @@ class CreateTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func createTaskAction(_ sender: Any) {
-        presenter.validate(name: nameTextField.text, timeStart: startTimeDatePicker.date, timeEnd: endTimeDatePicker.date)
+        presenter.save(name: nameTextField.text, specification: descriptionTextField.text, day: dayDatePicker.date, timeStart: startTimeDatePicker.date, timeEnd: endTimeDatePicker.date)
     }
+
 }
 
 extension CreateTaskViewController: CreateTaskViewProtocol {
